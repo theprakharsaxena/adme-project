@@ -32,7 +32,7 @@ const AllImages = () => {
   };
 
   return (
-    <div>
+    <div className="m-5 md:m-7 xl:m-10">
       <InfiniteScroll
         dataLength={allImages?.data?.pages?.flatMap((data) => data).length || 0}
         next={allImages.fetchNextPage}

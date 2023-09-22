@@ -2,7 +2,7 @@ import React from "react";
 import { useInfiniteQueryGetPaginatedItemsList } from "../Query/paginatedImageList";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { CircularProgress } from "@mui/material";
-import { FaDownload } from "react-icons/fa"
+import { FaDownload } from "react-icons/fa";
 
 const AllImages = () => {
   const allImages = useInfiniteQueryGetPaginatedItemsList();
@@ -68,12 +68,12 @@ const AllImages = () => {
                   <div key={index}>
                     <div>
                       <div className="relative">
-                        <img src={image?.download_url} />
+                        <img src={image?.download_url} alt={image?.author} />
                         <button
-                        className="absolute right-2 bottom-2"
+                          className="absolute right-2 bottom-2"
                           onClick={() => downloadImage(image?.download_url)}
                         >
-                          <FaDownload className="text-green-500 text-4xl"/>
+                          <FaDownload className="text-green-500 text-4xl" />
                         </button>
                       </div>
                       <h3 className=" font-serif text-slate-800">

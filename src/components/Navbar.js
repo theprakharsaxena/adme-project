@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <div className="px-14 py-3 grid grid-cols-6">
         <div className="w-20 flex items-center justify-center">
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" alt="Logo"/>
         </div>
         <div className="col-span-5 flex items-center justify-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold">Unsplash</h1>
